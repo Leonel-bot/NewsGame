@@ -83,6 +83,7 @@ class NoticiaController extends Controller
     {
         $noticia= Noticia::findOrFail($id);
         $noticia->comentarios;
+        $noticia->users->name;
         return view('Noticias.detalle',compact('noticia','id',));
     }
 

@@ -48,7 +48,7 @@
 
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a href="/Noticias" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="/Contacto" class="nav-link">Contact</a></li>
@@ -104,12 +104,12 @@
     
 </body>
 
-</html>
-
-<!-- <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+     <!-- <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
-          <small>Copyright &copy; Your Website</small>
+          <small>Copyright &copy; Leonel Martinez</small>
         </div>
     </footer> -->
+</html>
+
 
 

@@ -29,6 +29,20 @@
     </div>
         <!-- NOTICIA MAS DESTACADA -->
         @foreach($topUno as $top1)
+        <div class="destacadas row"><a href="/Noticias/{{$top1->id}}">
+          <div class="card text-white">
+                <img class="card-img" src="{{$top1->foto}}" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="top card-title">{{$top1->titulo}}</h5>
+                  <p class=" top card-text">{{$top1->subtitulo}}</p>
+                  <p class="top card-text">{{$top1->created_at->diffForHumans()}}</p>
+                </div>
+              </div>
+            </div></a>
+        @endforeach
+
+
+        <!-- @foreach($topUno as $top1)
         <div class="destacadas row">
           <div class="card text-white">
                 <img class="card-img" src="{{$top1->foto}}" alt="Card image">
@@ -39,21 +53,11 @@
                 </div>
               </div>
         </div>
-        @endforeach
+        @endforeach -->
              
-        <!-- <div class="destacadas row">
-            <div class="card text-white">
-                <img class="card-img" src="https://cdn.atomix.vg/wp-content/uploads/2019/09/athem.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="top card-title">Según una nueva filtración, BioWare y EA trabajan ya en un nuevo Mass Effect</h5>
-                  <p class=" top card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="top card-text">Last updated 3 mins ago</p>
-                </div>
-              </div>
-        </div> -->
         @foreach($topDos as $top2)
         <div class="card-group row">
-            <div class="destacadas card">
+            <div class="destacadas card"><a href="/Noticias/{{$top2->id}}">
                 <div class="card text-white">
                     <img class="card-img" src="{{$top2->foto}}" alt="Card image">
                     <div class="card-img-overlay">
@@ -62,11 +66,11 @@
                       <p class="duoTop card-text">{{$top2->created_at->diffForHumans()}}</p>
                     </div>
                   </div>
-            </div>
+                </div></a>
             @endforeach
 
             @foreach($topTres as $top3)
-            <div class="destacadas card">
+            <div class="destacadas card"><a href="/Noticias/{{$top3->id}}">
                 <div class="card text-white">
                     <img class="card-img" src="{{$top3->foto}}" alt="Card image">
                     <div class="card-img-overlay">
@@ -75,8 +79,8 @@
                       <p class="duoTop card-text">{{$top3->created_at->diffForHumans()}}</p>
                     </div>
                   </div>
-            </div>
-        </div><hr>
+                </div></a>
+              </div><hr>
         @endforeach
 
 
