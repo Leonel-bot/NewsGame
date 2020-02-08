@@ -83,12 +83,21 @@
         @endforeach
       </ul><hr>
 
-
+      <!-- <ul class="">
+        @foreach($errors->all() as $error)
+        <li>{{$error}}</li>
+        @endforeach
+      </ul> -->
 
       <form action="/Noticias/{{$noticia->id}}/Comentar" method="post"enctype="multipart/form-data">{{csrf_field() }} 
       <div class="form-group">
           <label for=""><h4>Deja aqui un comentario</h4></label>
           <input type="text" name="coment" class="form-control" id="exampleFormControlInput1" placeholder="">
+           <ul class="">
+             @foreach($errors->all() as $error)
+              <li><strong style="color: rgb(146, 9, 9);">{{$error}}</strong></li>
+             @endforeach
+           </ul>
           <input type="hidden" name="noticia_id" value="{{$noticia->id}}">
           <input type="hidden" name="user_name" value="{{User::class}}">
         </div>

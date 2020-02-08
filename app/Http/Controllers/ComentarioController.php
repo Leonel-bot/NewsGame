@@ -24,6 +24,18 @@ class ComentarioController extends Controller
      */
     public function create(Request $req)
     {
+        $reglas= [
+            'coment'=>  ['string', 'min:5'],
+            'user_id'=> ['integer','required']
+        ];
+        $mensaje= [
+            'required' => "Recuerde estar logeado antes de comentar",
+            'min' => "El comentario debe tener un min de :min caracteres",
+            'string' => "El comentario tiene que ser un texto"
+        ];
+        
+        $this->validate($req,$reglas,$mensaje);
+
         $comentario= new Comentario();
 
         $comentario->coment= $req['coment'];

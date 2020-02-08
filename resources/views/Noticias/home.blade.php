@@ -40,21 +40,17 @@
               </div>
             </div></a>
         @endforeach
-
-
-        <!-- @foreach($topUno as $top1)
-        <div class="destacadas row">
-          <div class="card text-white">
-                <img class="card-img" src="{{$top1->foto}}" alt="Card image">
+             
+        <!-- <div class="destacadas row">
+            <div class="card text-white">
+                <img class="card-img" src="https://cdn.atomix.vg/wp-content/uploads/2019/09/athem.jpg" alt="Card image">
                 <div class="card-img-overlay">
-                  <h5 class="top card-title">{{$top1->titulo}}</h5>
-                  <p class=" top card-text">{{$top1->subtitulo}}</p>
-                  <p class="top card-text">{{$top1->created_at->diffForHumans()}}</p>
+                  <h5 class="top card-title">Según una nueva filtración, BioWare y EA trabajan ya en un nuevo Mass Effect</h5>
+                  <p class=" top card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="top card-text">Last updated 3 mins ago</p>
                 </div>
               </div>
-        </div>
-        @endforeach -->
-             
+        </div> -->
         @foreach($topDos as $top2)
         <div class="card-group row">
             <div class="destacadas card"><a href="/Noticias/{{$top2->id}}">
@@ -80,7 +76,7 @@
                     </div>
                   </div>
                 </div></a>
-              </div><hr>
+        </div><hr>
         @endforeach
 
 
